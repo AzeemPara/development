@@ -82,6 +82,8 @@ body {
 .link-btn:focus,
 .link-btn:active {
   background: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+  font-weight: 600;
 }
 
 @media (max-width: 480px) {
