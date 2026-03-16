@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  background: hsl(0, 0%, 8%);
+  color: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+
+.profile-card {
+  background: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 384px;
+  padding: 40px 32px 48px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.location {
+  color: hsl(75, 94%, 57%);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.bio {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d0d0d0;
+  margin-bottom: 32px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link-btn {
+  background: hsl(0, 0%, 20%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.link-btn:visited {
+  background: hsl(0, 0%, 20%);
+}
+
+.link-btn:hover,
+.link-btn:focus,
+.link-btn:active {
+  background: hsl(75, 94%, 57%);
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 32px 24px 40px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+}
